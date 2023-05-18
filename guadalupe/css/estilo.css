@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 nav{
@@ -17,6 +20,7 @@ nav{
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .nav-links{
@@ -35,6 +39,7 @@ nav{
     letter-spacing: 2.5px;
     font-weight: bold;
     font-size: 18px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .burger{

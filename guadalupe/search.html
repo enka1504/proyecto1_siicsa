@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANTANTES</title>
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+    <main>
+        <h1>Buscar cantantes por nombre o apellido</h1>
+        <div class="input-container">
+            <input type="search" id="search" placeholder="Buscar un cantante">
+        </div>
+        <div class="errors-container" style="display: none;">
+            <p></p>
+            <div class="user1">
+                <img src="images/error.gif" alt="" class="user">
+            </div>
+        </div>
+        <div class="results-container" style="display: none;" id="resultsContainer">
+            <table id="results">
+                <thead>
+                    <th>ID</th>
+                    <th>NOMBRE</th>
+                    <th>APELLIDO</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        
+        <div id="user1" class="user1">
+            <img id="user" class="user" src="images/search.gif" alt="">
+        </div>
+    </main>
+    
+
+    <script src="js/search.js"></script>
+</body>
+</html>
