@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/ejercicio1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>GUARDAR DATOS</h1>
+    </div>
+
+    <div>
+        <form name="registro">
+            <fieldset>
+                <legend>Datos del usuario</legend>
+
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre"><br><br>
+                <input type="tel" name="telefono" id="telefono" placeholder="Número telefónico"><br><br>
+                <input type="email" name="email" id="email" placeholder="E-mail"><br><br>
+            </fieldset>
+            <br><br>
+            <fieldset>
+                <legend>radio y checkbox</legend>
+
+                <h3>Sabores</h3>
+                <input type="radio" name="sabor" id="chocolate" value="Chocolate" checked>Chocolate <br><br>
+                <input type="radio" name="sabor" id="fresa" value="Fresa">Uva <br><br>
+                <input type="radio" name="sabor" id="uva" value="Uva">Fresa <br><br>
+
+                <h3>Tipo</h3>
+                <input type="radio" name="tipo" id="natural" value="Natural" checked>Natural <br><br>
+                <input type="radio" name="tipo" id="artificial" value="Artificial">Artificial <br><br>
+
+                <h3>Acompañamientos</h3>
+                <input type="checkbox" name="acom" id="chocolatee" value="Chocolate">Chocolate <br><br>
+                <input type="checkbox" name="acom" id="pay" value="Pay">Pay <br><br>
+                <input type="checkbox" name="acom" id="chispas" value="Chispas">Chispas de colores <br><br>
+                <input type="checkbox" name="acom" id="pasas" value="Pasas">Pasas 
+            </fieldset>
+
+            <br><button type="button" onclick="guardar()">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
