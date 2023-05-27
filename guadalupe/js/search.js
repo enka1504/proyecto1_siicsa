@@ -1,4 +1,4 @@
-const user1 = document.getElementById('user1');
+const user1 = document.getElementById('user1')
 
 window.addEventListener('DOMContentLoaded', () => {
     const search = document.querySelector('#search')
@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (search){
         search.addEventListener('input', event =>{
             search_cantantes = event.target.value.toUpperCase()
-            user1.style.display = 'none'; 
+            user1.style.display = 'none'
             showResults()
         })
     }
@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
             return response.json();
 
         }catch(error){
-            alert(`${'Hubo un error: '}${error.message}`);
+            alert(`${'Hubo un error: '}${error.message}`)
             console.log(error)
         }
     }
@@ -43,10 +43,10 @@ window.addEventListener('DOMContentLoaded', () => {
             if(typeof dataResults.data !== 'undefined' && !dataResults.data){
                 errorsContainer.style.display = 'block'
                 errorsContainer.querySelector('p').innerHTML = `No hay resultados: <span class="bold">${search_cantantes}</span>`
-                resultsContainer.style.display = 'none';
+                resultsContainer.style.display = 'none'
             }else{
-                resultsContainer.style.display = 'block';
-                errorsContainer.style.display = 'none';
+                resultsContainer.style.display = 'block'
+                errorsContainer.style.display = 'none'
                 for(const cantante of dataResults){
                     const row= document.createElement('tr')
                     row.innerHTML= ` 
