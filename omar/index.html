@@ -4,27 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicios</title>
+    <title>Capturar Firma Digital y Generar PDF</title>
     <link rel="stylesheet" href="main.css">
+    <script src="https://unpkg.com/signature_pad"></script>
+    <!-- <script src="signature_pad.umd.js"></script> -->
 </head>
 <body>
-    <div class="divsillo">
-        <h3>Convertir números a romanos</h3>
-        <input type="text" id="ipt1">
-        <p id="result1"></p>
-        <button id="1">Siguiente</button>
+
+    <div class="container">
+        <h1>Capturar Firma Digital</h1>
+        <form id="signatureForm" method="post">     
+            <canvas id="signatureCanvas" class="signatureCanvas" width="300" height="200"></canvas>
+            <div class="container-btn">
+                <button id="clearButton">Limpiar</button>
+                <button>Guardar</button>
+            </div>
+        </form>
     </div>
-    <div class="divsillo">
-        <h3>Convertir números romanos a cardinales</h3>
-        <input type="text" id="ipt2">
-        <p id="result2"></p>
-        <button id="2">Siguiente</button>
-    </div>
-    <div class="divsillo">
-        <h3>Extender un número</h3>
-        <input type="text" id="ipt3">
-        <p id="result3"></p>
-        <button id="3">Siguiente</button>
+    <div class="container">
+        <img src="" id="signatureImage">
     </div>
 
     <script src="app.js"></script>

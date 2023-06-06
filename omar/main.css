@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Wix Madefor Display', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 img{
     max-width: 100%;
@@ -17,72 +17,66 @@ button{
     cursor: pointer;
 }
 
+
 body {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: auto;
-    margin-top: 100px;
-    width: 80%;
-    height: 100%;
-    background-image: linear-gradient(to right, #c31432, #240b36);
+    background: #f1f2f7;
 }
 
-.divsillo {
+.container {
+    width: 70%;
+    height: 400px;
+    background: #fff;
+    border-radius: 2px;
     display: flex;
-    width: 33%;
-    height: 250px;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-}
-
-p {
-    background-color: azure;
-    padding: 15px;
-    display: none;
-}
-
-h3 {
-    color: aliceblue;
+    margin: auto;
+    margin-top: 5%;
     text-align: center;
 }
 
+.signatureCanvas {
+    border: 1.5px dashed #6c6054;
+    cursor: crosshair;
+}
+
+.container-btn {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+
+@media (width <= 768px) {
+    .container {
+        height: 450px;
+        width: 85%;
+        margin-top: 8%;
+    }
+}
 
 
 
-button {
-    background-color: #FFFFFF;
-    border: 1px solid rgb(209,213,219);
-    border-radius: .5rem;
-    color: #111827;
-    font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: .875rem;
-    font-weight: 600;
-    line-height: 1.25rem;
-    padding: .75rem 1rem;
-    text-align: center;
-    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    cursor: pointer;
-    -moz-user-select: none;
-    -ms-user-select: none;
+
+button, .btn {
+    width: fit-content;
+    min-width: 100px;
+    height: 45px;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px -20px;
+    background-color: #9d8d7c;
+    transition: all 0.2s ease-in-out 0ms;
     user-select: none;
-    -webkit-user-select: none;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
+    color: #fff;
   }
   
-  button:hover {
-    background-color: #f9fafb;
+  button:hover, .btn:hover {
+    background-color: #8e7d6a;
+    box-shadow: 0px 0px 20px -18px;
   }
   
-  button:focus {
-    outline: 2px solid rgba(0,0,0,0.1);
-    outline-offset: 2px;
-  }
-  
-  button:focus-visible {
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  button:active, .btn:active {
+    transform: scale(0.95);
   }
