@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <form id="myForm">
+    <input type="submit" value="Enviar" id="submitButton">
+  </form>
+
+  <script>
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+      document.getElementById('myForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        var data = {
+          firmaCliente: "firma.png"
+        };
+
+        console.log(JSON.stringify(data));
+
+        fetch('http://appsiicsa.com/siicsa/api/orden-trabajo/6/update', {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        })
+          .then(function (response) {
+            if (response.ok) {
+              return response.json();
+            }
+            throw new Error('Error en la respuesta de la API.');
+          })
+          .then(function (data) {
+            console.log('Respuesta de la API:', data);
+          })
+          .catch(function (error) {
+
+            console.error('Error:', error);
+          });
+      });
+
+    })
+
+  </script>
+</body>
+
+</html>
