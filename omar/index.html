@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capturar Firma Digital y Generar PDF</title>
     <link rel="stylesheet" href="main.css">
-    <script src="https://unpkg.com/signature_pad"></script>
-    <!-- <script src="signature_pad.umd.js"></script> -->
+    <!-- <script src="https://unpkg.com/signature_pad"></script> -->
+    <script src="signature_pad.umd.js"></script>
 </head>
+
 <body>
 
     <div class="container">
         <h1>Capturar Firma Digital</h1>
-        <form id="signatureForm" method="post">     
-            <canvas id="signatureCanvas" class="signatureCanvas" width="300" height="200"></canvas>
-            <div class="container-btn">
-                <button id="clearButton">Limpiar</button>
-                <button>Guardar</button>
-            </div>
-        </form>
+        <canvas id="signatureCanvas" class="signatureCanvas" width="300" height="200"></canvas>
+        <div class="container-btn">
+            <button id="clearButton">Limpiar</button>
+            <button id="saveButton">Guardar</button>
+        </div>
     </div>
     <div class="container">
         <img src="" id="signatureImage">
@@ -27,4 +27,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>
