@@ -1,0 +1,67 @@
+:root{
+    --primary-color: rgb(92, 76, 61);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    padding: 1rem;
+    color: var(--primary-color);
+}
+
+.canvas-container{
+    position: relative;
+}
+
+.signature-pad-form{
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#clear-button{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff00;
+}
+
+.signature-pad{
+    cursor: crosshair;
+    border: 2px solid #58402d;
+    border-radius: 4px;
+}
+
+.save-button{
+    width: 100%;
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+
+#image-container{
+    position: relative;
+    display: inline-block;
+}
+#delete-button{
+    position: absolute;
+    display: none;
+    top: 10px;
+    left: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff00;
+}
+
+
+@media(pointer: coarse){
+    body{
+        overflow: hidden;
+    }
+}
