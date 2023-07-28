@@ -1,6 +1,6 @@
 
 //la url que uds van a consumir es la siguiente
-// ->/siicsa/api/orden-trabajo/id(id del campo para actualizar)/update
+// ->/siicsa/api/orden-trabajo/6/update
 
 //este ejemplo es como se consume informacion en las urls que ven
 
