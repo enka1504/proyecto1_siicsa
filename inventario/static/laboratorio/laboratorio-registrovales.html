@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIICSA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+    <nav class="top">
+        <img src="http://appsiicsa.com/static/images/logo_short.png" alt="">
+        <img src="http://appsiicsa.com/static/images/logo_text.png" alt="">
+    </nav>
+    <main>
+        <aside class="utilities">
+            <p>UTILIDADES</p>
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header">
+                        <i class="material-icons">extension</i>
+                        <span class="hide-menu">INVENTARIO</span>
+                    </div>
+                    <div class="">
+                        <ul class="collapsible" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">airport_shuttle</i>
+                                    <span>Vehículos</span><i class="material-icons">chevron_right</i>
+                                </div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li>
+                                            <a href="/vehiculo">
+                                                <i class="material-icons">adjust</i>
+                                                <span class="hide-menu">Listar</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/vehiculo/vales">
+                                                <i class="material-icons">adjust</i>
+                                                <span class="hide-menu">Vales</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">build</i>
+                                    <span>Equipos de laboratorio</span><i class="material-icons">chevron_right</i>
+                                </div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li>
+                                            <a href="/laboratorio">
+                                                <i class="material-icons">adjust</i>
+                                                <span class="hide-menu">Listar</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/laboratorio/vales">
+                                                <i class="material-icons">adjust</i>
+                                                <span class="hide-menu">Vales</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">event_seat</i>
+                                    <span>Mobiliario</span><i class="material-icons">chevron_right</i>
+                                </div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li>
+                                            <a href="/mobiliario">
+                                                <i class="material-icons">adjust</i>
+                                                <span class="hide-menu">Listar</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">devices_other</i>
+                                    <span>Multimedia</span><i class="material-icons">chevron_right</i>
+                                </div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li>
+                                            <a href="/multimedia">
+                                                <i class="material-icons">adjust</i>
+                                                <span class="hide-menu">Listar</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+        <div class="maincontent">
+            <div class="panel">
+                <h4>Vales de Salida de Equipo y/o Herramienta</h4>
+                <a href="/">Inicio</a>
+            </div>
+            <div class="wrap">
+                <div class="card-panel" id="card-panel">
+                    <form id="vehiculoForm">
+
+                        <div class="row">
+                            <div class="col s12 m12 l6">
+                                <div class="input-field">
+                                    <input type="text" id="folio">
+                                    <label for="folio">No. de Folio</label>
+                                </div>
+                            </div>
+                            <div class="col s12 m12 l6">
+                                <div class="input-field">
+                                    <input type="text" id="obra">
+                                    <label for="obra">Obra</label>
+                                </div>
+                            </div>
+                            <div class="col s12 m12 l6">
+                                <div class="input-field">
+                                    <input type="text" id="localizacion">
+                                    <label for="localizacion">Localización</label>
+                                </div>
+                            </div>
+                            <div class="col s12 m12 l6">
+                                <div class="input-field">
+                                    <input type="text" id="tipo_muestreo">
+                                    <label for="tipo_muestreo">Tipo de Muestreo</label>
+                                </div>
+                            </div>
+                            <div class="col s12 m12 l6">
+                                <div class="input-field">
+                                    <input type="text" class="datepicker" id="f_salida">
+                                    <label for="f_salida">Fecha de Salida</label>
+                                </div>
+                            </div>
+                            <div class="col s12 m12 l6">
+                                <div class="input-field">
+                                    <input type="text" class="datepicker" id="f_devolucion">
+                                    <label for="f_devolucion">Fecha de Devolución Compromiso</label>
+                                </div>
+                            </div>
+                            <div class="col s12 m12 l6">
+                                <div class="input-field">
+                                    <input type="text" class="datepicker" id="f_real">
+                                    <label for="f_real">Fecha de Devolución Real</label>
+                                </div>
+                            </div>
+
+                            <div class="equipos" style="display: none;">
+                                <div class="col s12 m12 l6">
+                                    <div class="input-field">
+                                        <input type="text" id="descripcion">
+                                        <label for="descripcion">Descripción</label>
+                                    </div>
+                                </div>
+                                <div class="col s12 m12 l6">
+                                    <div class="input-field">
+                                        <input type="text" id="unidad">
+                                        <label for="unidad">Unidad</label>
+                                    </div>
+                                </div>
+                                <div class="col s12 m12 l6">
+                                    <div class="input-field">
+                                        <input type="text" id="cantidad">
+                                        <label for="cantidad">Cantidad</label>
+                                    </div>
+                                </div>
+                                <div class="col s12 m12 l6">
+                                    <div class="input-field">
+                                        <input type="text" id="identificacion">
+                                        <label for="identificacion">Identificación</label>
+                                    </div>
+                                </div>
+                                <div class="col s12 m12 l6">
+                                    <div class="input-field">
+                                        <input type="text" id="observaciones">
+                                        <label for="observaciones">Observaciones</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="equipos" >
+                                <div class="col s12 m12 l6">
+                                    <div class="input-field">                                        
+                                        <label for="descripcion">Solicitó</label>
+                                        <canvas id="canvas"></canvas>
+                                        <br>
+                                        <button id="btnLimpiar" class="clean">Deshacer</button>
+                                        <button id="btnDescargar" class="donwload">Descargar</button>
+                                        <button id="btnGenerarDocumento" class="print">Pasar a documento</button>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="col s12 m12 l6">
+                                    <div class="input-field">
+                                        <label for="identificacion">Autorizó</label>
+                                        <canvas id="canvas2"></canvas>
+                                        <br>
+                                        <button id="btnLimpiar2" class="clean">Deshacer</button>
+                                        <button id="btnDescargar2" class="donwload">Descargar</button>
+                                        <button id="btnGenerarDoc2" class="print">Pasar a documento</button>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="col s12 m12 l6">
+                                    <div class="input-field">
+                                        <label for="identificacion">Entregó:</label>
+                                        
+                                        <canvas id="canvas"></canvas>
+                                        <br>
+                                        <button id="btnLimpiar" class="clean">Deshacer</button>
+                                        <button id="btnDescargar" class="donwload">Descargar</button>
+                                        <button id="btnGenerarDocumento" class="print">Pasar a documento</button>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="center-align">
+                            <button type="submit" class="waves-effect waves-light btn brown-back">
+                                <i class="material-icons left">save</i>
+                                Guardar vale
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer">
+                <p> <a href="http://www.siicsa.net/?view=index">SIICSA</a>  2023. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </main>
+    <script src="/static/ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIICSA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+
+<body>
+
+    <nav class="top">
+        <img src="http://appsiicsa.com/static/images/logo_short.png" alt="">
+        <img src="http://appsiicsa.com/static/images/logo_text.png" alt="">
+    </nav>
+
+    <main>
+        <aside class="utilities">
+            <p>UTILIDADES</p>
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header">
+                        <i class="material-icons">extension</i>
+                        <span class="hide-menu">INVENTARIO</span>
+                    </div>
+                    <div class="">
+                        <ul class="collapsible" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">airport_shuttle</i>
+                                    <span>Vehículos</span><i class="material-icons">chevron_right</i>
+                                </div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li>
+                                            <a href="/vehiculo">
+                                                <i class="material-icons">adjust</i>
+                                                <span class="hide-menu">Listar</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/vehiculo/vales">
+                                                <i class="material-icons">adjust</i>
+                                                <span class="hide-menu">Vales</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">build</i>
+                                    <span>Equipos de laboratorio</span><i class="material-icons">chevron_right</i>
+                                </div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li>
+                                            <a href="/laboratorio">
+                                                <i class="material-icons">adjust</i>
+                                                <span class="hide-menu">Listar</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/laboratorio/vales">
+                                                <i class="material-icons">adjust</i>
+                                                <span class="hide-menu">Vales</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">event_seat</i>
+                                    <span>Mobiliario</span><i class="material-icons">chevron_right</i>
+                                </div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li>
+                                            <a href="/mobiliario">
+                                                <i class="material-icons">adjust</i>
+                                                <span class="hide-menu">Listar</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">devices_other</i>
+                                    <span>Multimedia</span><i class="material-icons">chevron_right</i>
+                                </div>
+                                <div class="collapsible-body">
+                                    <ul>
+                                        <li>
+                                            <a href="/multimedia">
+                                                <i class="material-icons">adjust</i>
+                                                <span class="hide-menu">Listar</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+
+
+        <div class="maincontent">
+            <div class="panel">
+                <h4>Dashboard</h4>
+                <a href="/">Inicio</a>
+            </div>
+            
+        </div>
+        
+        
+
+    </main>
+    <script src="/static/ui.js"></script>
+</body>
+
+</html>
